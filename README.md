@@ -35,9 +35,9 @@ Frozen demo run: ADB base case, standard precision, seeds 0 and 1, ideal simulat
 
 ## Model run video
 
-[![Model run video: click to play](evidence/poster.jpg)](evidence/tandem-demo-voiced.mp4)
+[![Model run video: click to play](evidence/poster.jpg)](evidence/Model%20run%20video.mp4)
 
-**[▶ Model run video](evidence/tandem-demo-voiced.mp4)** (4 min 36 s, 1080p60, narrated; [download](https://github.com/Abhinav-Mathew-Kurian/ADB-QuantumChallenge-KBS/raw/main/evidence/tandem-demo-voiced.mp4)). It has an English subtitle track, also available as [`captions_en.srt`](evidence/captions_en.srt).
+**[▶ Model run video](evidence/Model%20run%20video.mp4)** (4 min 36 s, 1080p60, narrated; [download](https://github.com/Abhinav-Mathew-Kurian/ADB-QuantumChallenge-KBS/raw/main/evidence/Model%20run%20video.mp4)). It has an English subtitle track, also available as [`captions_en.srt`](evidence/captions_en.srt).
 
 The film was recorded frame by frame from the live application running the frozen model run. No frames are mocked up.
 
@@ -54,7 +54,7 @@ ADB-QuantumChallenge-KBS/
 │   ├── PHASE_2_PLAN.md            objectives, work packages, risks, resources
 │   └── AI_TOOLS_DISCLOSURE.md     which AI tools were used, for what, and how their output was controlled
 ├── evidence/
-│   ├── tandem-demo-voiced.mp4     Model run video (narrated demo film)
+│   ├── Model run video.mp4        narrated demo film
 │   ├── captions_en.srt            subtitles
 │   ├── poster.jpg
 │   └── sample-results/            CSV/JSON exported from the frozen run and the benchmark evidence

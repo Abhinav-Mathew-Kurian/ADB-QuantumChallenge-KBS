@@ -7,7 +7,7 @@ The challenge brief asks entrants to disclose any AI use in the submission packa
 | Tool | Provider | Used for |
 |---|---|---|
 | **Claude Code** (Claude Opus model family) | Anthropic | **Coding:** Python, TypeScript and Node.js code, tests, evidence scripts, and the scripted recording of the demo film, all under the team's direction. **Research:** finding and reading the papers the brief cites and the further literature in our references. **Writing:** drafting status notes and documentation, including this repository's documents. |
-| **ElevenLabs** text-to-speech | ElevenLabs | The narration voice in `evidence/tandem-demo-voiced.mp4`. The narration script was written by the team (with drafting help from Claude Code) and timed to the film. The voice is synthetic, not a recording of a team member. |
+| **ElevenLabs** text-to-speech | ElevenLabs | The narration voice in `evidence/Model run video.mp4`. The narration script was written by the team (with drafting help from Claude Code) and timed to the film. The voice is synthetic, not a recording of a team member. |
 
 ## What AI is *not*
 

@@ -10,6 +10,8 @@ Each bond is wiped out in roughly two terms in a thousand. Shared earthquakes an
 
 This repository is the **public, sanitised companion** to the submission. It holds the documentation, the narrated demo film, sample results exported from the frozen run, and a description of the prototype. **It does not contain source code** (see [What is withheld](#what-is-withheld)).
 
+**▶ Watch the [Model run video](#model-run-video).**
+
 ---
 
 ## The result in one table
@@ -31,11 +33,13 @@ Frozen demo run: ADB base case, standard precision, seeds 0 and 1, ideal simulat
 
 **Claim boundary.** These are model estimates from an ideal simulator. **No quantum hardware was used.** The comparison is accuracy **per query**, not wall-clock time: for two countries the exact classical calculation is still the fastest method. We claim no quantum advantage. The outputs are not prices, ratings, forecasts or investment advice.
 
-## Watch the demo
+## Model run video
 
-[`evidence/tandem-demo-voiced.mp4`](evidence/tandem-demo-voiced.mp4): 4 min 36 s, 1080p60, narrated, with an English subtitle track (also as [`captions_en.srt`](evidence/captions_en.srt)). It was recorded frame by frame from the live application running the frozen request. No frames are mocked up.
+[![Model run video: click to play](evidence/poster.jpg)](evidence/tandem-demo-voiced.mp4)
 
-![Demo poster](evidence/poster.jpg)
+**[▶ Model run video](evidence/tandem-demo-voiced.mp4)** (4 min 36 s, 1080p60, narrated; [download](https://github.com/Abhinav-Mathew-Kurian/ADB-QuantumChallenge-KBS/raw/main/evidence/tandem-demo-voiced.mp4)). It has an English subtitle track, also available as [`captions_en.srt`](evidence/captions_en.srt).
+
+The film was recorded frame by frame from the live application running the frozen model run. No frames are mocked up.
 
 ## Repository map
 
@@ -50,7 +54,7 @@ ADB-QuantumChallenge-KBS/
 │   ├── PHASE_2_PLAN.md            objectives, work packages, risks, resources
 │   └── AI_TOOLS_DISCLOSURE.md     which AI tools were used, for what, and how their output was controlled
 ├── evidence/
-│   ├── tandem-demo-voiced.mp4     narrated demo film
+│   ├── tandem-demo-voiced.mp4     Model run video (narrated demo film)
 │   ├── captions_en.srt            subtitles
 │   ├── poster.jpg
 │   └── sample-results/            CSV/JSON exported from the frozen run and the benchmark evidence

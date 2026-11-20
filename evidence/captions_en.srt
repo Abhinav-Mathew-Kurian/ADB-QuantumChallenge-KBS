@@ -1,0 +1,175 @@
+1
+00:00:00,800 --> 00:00:07,292
+What is the probability that both ADB catastrophe bonds are wiped out in the same three-year term?
+
+2
+00:00:08,500 --> 00:00:13,559
+In 2026, the Asian Development Bank issued two catastrophe bonds:
+
+3
+00:00:13,599 --> 00:00:18,266
+USD 80 million each, for the Kyrgyz Republic and Tajikistan.
+
+4
+00:00:18,306 --> 00:00:22,581
+Each one is wiped out in about two terms in a thousand.
+
+5
+00:00:22,621 --> 00:00:31,210
+But shared earthquakes and rainfall link them, and a joint wipe-out would exhaust the whole programme at once.
+
+6
+00:00:31,800 --> 00:00:34,425
+We fix exactly what is estimated:
+
+7
+00:00:34,465 --> 00:00:42,984
+one event, one three-year term, the ADB base case, and frozen seeds, on a simulator, not quantum hardware.
+
+8
+00:00:43,024 --> 00:00:44,195
+Then we run it.
+
+9
+00:00:46,000 --> 00:00:53,355
+Before any number is shown, the circuit-integrity gate checks the 13-qubit circuit against the exact model:
+
+10
+00:00:53,395 --> 00:01:00,059
+the probability, the full joint wipe-out pattern, the oracle, and how Grover amplification grows.
+
+11
+00:01:00,099 --> 00:01:01,511
+All five checks pass.
+
+12
+00:01:01,551 --> 00:01:04,621
+If one failed, no estimate would be produced.
+
+13
+00:01:12,000 --> 00:01:14,881
+The answer: 3.16 × 10⁻⁵.
+
+14
+00:01:14,921 --> 00:01:24,859
+That is about 1 in 31,700 three-year terms, with a 95% interval from 2.95 to 3.34.
+
+15
+00:01:24,899 --> 00:01:28,997
+A model statement, not a forecast.
+
+16
+00:01:38,200 --> 00:01:45,534
+Iterative Quantum Amplitude Estimation reached it in 9 rounds, with Grover powers up to 804.
+
+17
+00:01:50,100 --> 00:01:57,260
+Now we check it, on the same model, the same event, and the same budget of 77,000 queries.
+
+18
+00:01:57,300 --> 00:02:00,540
+The exact value sits inside our interval.
+
+19
+00:02:00,580 --> 00:02:04,540
+A second run with a fresh seed agrees within 1.5%.
+
+20
+00:02:04,580 --> 00:02:11,340
+Monte Carlo, at the same budget, saw no wipe-out at all: not observed, not zero risk.
+
+21
+00:02:11,380 --> 00:02:16,940
+A tuned importance sampler gets close, with an interval 8 times wider.
+
+22
+00:02:21,300 --> 00:02:27,562
+Across many seeds at 8,000 queries, Monte Carlo's error is about 190%.
+
+23
+00:02:27,602 --> 00:02:28,823
+IQAE's is 49%.
+
+24
+00:02:28,863 --> 00:02:32,694
+That is accuracy per query, not clock time:
+
+25
+00:02:32,734 --> 00:02:38,276
+for two countries, the exact calculation is still the fastest.
+
+26
+00:02:43,200 --> 00:02:48,081
+Every run becomes a Decision, Confidence and Evidence record.
+
+27
+00:02:48,121 --> 00:02:49,936
+Decision: ready to use.
+
+28
+00:02:49,976 --> 00:02:50,824
+Confidence:
+
+29
+00:02:50,864 --> 00:03:00,666
+0.8, from precision, integrity, provenance, and agreement between independent methods; the exact answer is never an input.
+
+30
+00:03:00,706 --> 00:03:07,926
+Evidence: the input hash, model fingerprint, circuit hash, seeds, and the software commit.
+
+31
+00:03:08,400 --> 00:03:11,149
+One click re-runs it from the record.
+
+32
+00:03:11,189 --> 00:03:14,240
+All 8 stored outputs come back identical.
+
+33
+00:03:22,000 --> 00:03:28,540
+And the record becomes a report, ready to share, generated only from the stored evidence.
+
+34
+00:03:35,000 --> 00:03:37,272
+What drives the joint tail?
+
+35
+00:03:37,312 --> 00:03:48,147
+On the same frozen model, amplitude amplification draws 1,000 wipe-out scenarios, at 279 queries each, instead of about 31,600.
+
+36
+00:03:48,187 --> 00:03:53,370
+In nine out of ten, one rainfall event triggered both covers.
+
+37
+00:03:53,410 --> 00:03:57,566
+In about half, one earthquake hit both countries.
+
+38
+00:03:57,606 --> 00:04:00,220
+Model evidence, not a forecast.
+
+39
+00:04:06,100 --> 00:04:06,283
+So:
+
+40
+00:04:06,323 --> 00:04:18,473
+one rare, joint risk, estimated live on a simulator, checked against independent methods, and recorded so that anyone can review it, reproduce it, and challenge it.
+
+41
+00:04:18,513 --> 00:04:23,899
+Not a claim of quantum advantage, but a workflow you can trust, and test.
+
+42
+00:04:28,000 --> 00:04:28,475
+Tandem.
+
+43
+00:04:28,515 --> 00:04:32,304
+From joint catastrophe risk, to reviewable evidence.
+
+44
+00:04:32,344 --> 00:04:33,040
+Thank you.

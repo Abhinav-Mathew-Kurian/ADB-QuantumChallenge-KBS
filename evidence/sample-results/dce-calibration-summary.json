@@ -1,0 +1,179 @@
+{
+  "records": 1584,
+  "tolerance": 0.1,
+  "budgets": "IQAE epsilon \u00d7 {2, 1, 0.5}; classical at the same number of queries",
+  "corroboration": "triangulation: each of IQAE, MC and CE-IS checked against the other two (independent seeds)",
+  "heldOutSeeds": "IQAE 9000+s, CE-IS 10000+s, MC 11000+s (held-out seeds: never used in designing ADB-DCE.4)",
+  "overall": {
+    "n": 1584,
+    "baseRate": 0.8869949494949495,
+    "brier": 0.04705464551767677,
+    "brierBaseRate": 0.10023490906540149,
+    "skill": 0.5305563106065727,
+    "byDecision": {
+      "ACCEPT": {
+        "n": 1205,
+        "withinTolerance": 1190,
+        "covered": 1170,
+        "fractionWithinTolerance": 0.9875518672199171,
+        "fractionCovered": 0.970954356846473
+      },
+      "REFINE": {
+        "n": 222,
+        "withinTolerance": 175,
+        "covered": 213,
+        "fractionWithinTolerance": 0.7882882882882883,
+        "fractionCovered": 0.9594594594594594
+      },
+      "HELD": {
+        "n": 157,
+        "withinTolerance": 40,
+        "covered": 143,
+        "fractionWithinTolerance": 0.25477707006369427,
+        "fractionCovered": 0.910828025477707
+      }
+    },
+    "ece": 0.01665505050505062
+  },
+  "briefTargets": {
+    "n": 900,
+    "skill": 0.6419599367896602,
+    "byDecision": {
+      "ACCEPT": {
+        "n": 733,
+        "withinTolerance": 722,
+        "covered": 706,
+        "fractionWithinTolerance": 0.984993178717599,
+        "fractionCovered": 0.9631650750341064
+      },
+      "REFINE": {
+        "n": 73,
+        "withinTolerance": 60,
+        "covered": 69,
+        "fractionWithinTolerance": 0.821917808219178,
+        "fractionCovered": 0.9452054794520548
+      },
+      "HELD": {
+        "n": 94,
+        "withinTolerance": 15,
+        "covered": 83,
+        "fractionWithinTolerance": 0.1595744680851064,
+        "fractionCovered": 0.8829787234042553
+      }
+    }
+  },
+  "cascadeTargets": {
+    "n": 684,
+    "skill": 0.380111252944079,
+    "byDecision": {
+      "ACCEPT": {
+        "n": 472,
+        "withinTolerance": 468,
+        "covered": 464,
+        "fractionWithinTolerance": 0.9915254237288136,
+        "fractionCovered": 0.9830508474576272
+      },
+      "REFINE": {
+        "n": 149,
+        "withinTolerance": 115,
+        "covered": 144,
+        "fractionWithinTolerance": 0.7718120805369127,
+        "fractionCovered": 0.9664429530201343
+      },
+      "HELD": {
+        "n": 63,
+        "withinTolerance": 25,
+        "covered": 60,
+        "fractionWithinTolerance": 0.3968253968253968,
+        "fractionCovered": 0.9523809523809523
+      }
+    }
+  },
+  "byMethod": {
+    "iqae": {
+      "n": 528,
+      "baseRate": 0.9867424242424242,
+      "skill": 0.6842004405593638,
+      "byDecision": {
+        "ACCEPT": {
+          "n": 504,
+          "withinTolerance": 504,
+          "covered": 504,
+          "fractionWithinTolerance": 1.0,
+          "fractionCovered": 1.0
+        },
+        "REFINE": {
+          "n": 15,
+          "withinTolerance": 15,
+          "covered": 15,
+          "fractionWithinTolerance": 1.0,
+          "fractionCovered": 1.0
+        },
+        "HELD": {
+          "n": 9,
+          "withinTolerance": 2,
+          "covered": 9,
+          "fractionWithinTolerance": 0.2222222222222222,
+          "fractionCovered": 1.0
+        }
+      }
+    },
+    "monte_carlo": {
+      "n": 528,
+      "baseRate": 0.7386363636363636,
+      "skill": 0.46237330955629874,
+      "byDecision": {
+        "ACCEPT": {
+          "n": 252,
+          "withinTolerance": 241,
+          "covered": 242,
+          "fractionWithinTolerance": 0.9563492063492064,
+          "fractionCovered": 0.9603174603174603
+        },
+        "REFINE": {
+          "n": 153,
+          "withinTolerance": 119,
+          "covered": 149,
+          "fractionWithinTolerance": 0.7777777777777778,
+          "fractionCovered": 0.9738562091503268
+        },
+        "HELD": {
+          "n": 123,
+          "withinTolerance": 30,
+          "covered": 112,
+          "fractionWithinTolerance": 0.24390243902439024,
+          "fractionCovered": 0.9105691056910569
+        }
+      }
+    },
+    "importance_ce": {
+      "n": 528,
+      "baseRate": 0.9356060606060606,
+      "skill": 0.44823425726125266,
+      "byDecision": {
+        "ACCEPT": {
+          "n": 449,
+          "withinTolerance": 445,
+          "covered": 424,
+          "fractionWithinTolerance": 0.9910913140311804,
+          "fractionCovered": 0.9443207126948775
+        },
+        "HELD": {
+          "n": 25,
+          "withinTolerance": 8,
+          "covered": 22,
+          "fractionWithinTolerance": 0.32,
+          "fractionCovered": 0.88
+        },
+        "REFINE": {
+          "n": 54,
+          "withinTolerance": 41,
+          "covered": 49,
+          "fractionWithinTolerance": 0.7592592592592593,
+          "fractionCovered": 0.9074074074074074
+        }
+      }
+    }
+  },
+  "caveat": "Base rate 0.887: most held-out estimates were within tolerance anyway, so the test set may be too easy. Calibration is measured on the ADB benchmark targets only."
+}

@@ -1,0 +1,19 @@
+check,passed,detail
+question and programme period are explicit,True,
+"build, model and inputs match the freeze manifest",True,
+assumptions are documented and labelled by source,True,
+the complete workflow ran three times,True,
+"the three runs give identical, explainable outputs",True,
+an estimate and an uncertainty interval are returned,True,"3.159e-05 [2.95e-05, 3.34e-05]"
+the displayed probability is for the selected model and event,True,
+IQAE was used (Grover power > 0) and the integrity gate passed,True,
+independent checks share one disclosed budget,True,{77370}
+classical and quantum comparisons use the same target and assumptions,True,
+the DCE record can reconstruct and review the run,True,
+repeating gives a new run ID each time (evidence stored once),True,
+"a fresh seed gives a new, consistent estimate",True,3.186114693786105e-05
+worst cases finished on the same frozen model and scenario,True,done
+the run reproduces exactly from its stored record,True,
+the report can be saved (generated from the record),True,
+"outputs say simulator, not hardware",True,
+"outputs carry no unsupported speed-up, hardware or scale claims",True,

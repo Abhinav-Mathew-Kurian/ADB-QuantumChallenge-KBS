@@ -1,0 +1,7 @@
+group,label,sampled_fraction,exact_fraction,count_of_1000
+composition,Shared quake and shared rain,0.455,0.4285456690655089,455
+composition,"Shared rain, separate quakes",0.444,0.45692269418245846,444
+composition,"Shared quake, separate rain",0.045,0.055430593500857404,45
+composition,No shared event (separate disasters),0.056,0.05910104325117516,56
+finding,One shared rainfall event triggered both rain covers,0.899,0.8854683632479674,899
+finding,A shared earthquake triggered both earthquake covers,0.5,0.4839762625663663,500

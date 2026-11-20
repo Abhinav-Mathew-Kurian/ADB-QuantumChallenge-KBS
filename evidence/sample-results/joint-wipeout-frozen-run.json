@@ -1,0 +1,193 @@
+{
+  "purpose": "Frozen demonstration run: probability that both ADB catastrophe bonds are wiped out in one 3-year term",
+  "frozenAt": "2026-11-11T07:27:22+00:00",
+  "workflowVersion": "BP15-joint-wipeout-1",
+  "solverFingerprintSha256": "992ff345670c11dc3543ff5a84acf5609f17b89e5e444784e3185963918e8f75",
+  "request": {
+    "scenario": "adb-base",
+    "precision": "standard",
+    "seed": 0,
+    "repeatSeed": 1
+  },
+  "worstCaseRequest": {
+    "shots": 1000,
+    "seed": 21
+  },
+  "reproducibility": {
+    "runs": 3,
+    "identical": true,
+    "evidenceId": "8008ac7f5b8c6173a536"
+  },
+  "expected": {
+    "comparison": [
+      {
+        "role": "reference",
+        "method": "exact",
+        "value": 3.163304630917887e-05,
+        "interval": null,
+        "queries": null
+      },
+      {
+        "role": "estimate",
+        "method": "iqae",
+        "value": 3.158592606668321e-05,
+        "interval": [
+          2.9500826169707027e-05,
+          3.3376386462325744e-05
+        ],
+        "queries": 77370
+      },
+      {
+        "role": "repeat",
+        "method": "iqae",
+        "value": 3.113975950655135e-05,
+        "interval": [
+          2.8611742116846597e-05,
+          3.408545583950878e-05
+        ],
+        "queries": 56580
+      },
+      {
+        "role": "check",
+        "method": "monte_carlo",
+        "value": 0.0,
+        "interval": [
+          0.0,
+          4.964803024208895e-05
+        ],
+        "queries": 77370
+      },
+      {
+        "role": "check",
+        "method": "importance_ce",
+        "value": 3.71226877288332e-05,
+        "interval": [
+          2.1701773604169508e-05,
+          5.254360185349689e-05
+        ],
+        "queries": 77370
+      }
+    ],
+    "estimate": {
+      "value": 3.158592606668321e-05,
+      "interval": [
+        2.9500826169707027e-05,
+        3.3376386462325744e-05
+      ],
+      "level": 0.95,
+      "method": "IQAE",
+      "queries": 77370,
+      "oneIn": 31659.670129311125,
+      "oneInLow": 29961.302165792265,
+      "oneInHigh": 33897.355763780324,
+      "percent": 0.0031585926066683206,
+      "frequencyNote": "1 / (estimate) \u2014 computed from the displayed probability, per 3-year programme term; a model statement, not a forecast"
+    },
+    "decision": "ACCEPT",
+    "confidence": 0.8,
+    "integrityPassed": true,
+    "circuitSha256": "ca26f8af85ce834ef10a4a965413565077ecf1cd5294d73743c126634ce2e5c7",
+    "worstCases": {
+      "samples": 1000,
+      "findings": [
+        {
+          "key": "sharedRain",
+          "text": "One shared rainfall event triggered both rain covers",
+          "sampled": 0.899,
+          "exact": 0.8854683632479674,
+          "count": 899
+        },
+        {
+          "key": "sharedQuake",
+          "text": "A shared earthquake triggered both earthquake covers",
+          "sampled": 0.5,
+          "exact": 0.4839762625663663,
+          "count": 500
+        }
+      ],
+      "composition": [
+        {
+          "key": "both",
+          "label": "Shared quake and shared rain",
+          "sampled": 0.455,
+          "exact": 0.4285456690655089,
+          "count": 455
+        },
+        {
+          "key": "rainOnly",
+          "label": "Shared rain, separate quakes",
+          "sampled": 0.444,
+          "exact": 0.45692269418245846,
+          "count": 444
+        },
+        {
+          "key": "quakeOnly",
+          "label": "Shared quake, separate rain",
+          "sampled": 0.045,
+          "exact": 0.055430593500857404,
+          "count": 45
+        },
+        {
+          "key": "neither",
+          "label": "No shared event (separate disasters)",
+          "sampled": 0.056,
+          "exact": 0.05910104325117516,
+          "count": 56
+        }
+      ],
+      "groverPower": 139,
+      "cost": {
+        "quantumQueriesPerScenario": 279.0,
+        "rejectionSamplingTriesPerScenario": 31612.510228263076,
+        "ratio": 113.30648827334436,
+        "oneOffEstimationQueries": "the run's IQAE estimate (already paid in step 3)",
+        "note": "Per worst-case scenario drawn. Rejection sampling needs about 1/p tries per scenario; amplitude amplification needs 2k+1 state preparations per shot. Query counts on an ideal simulator; this is not a wall-clock comparison."
+      }
+    }
+  },
+  "budgetStudy": {
+    "scenario": "adb-base",
+    "exact": 3.163304630917887e-05,
+    "rows": [
+      {
+        "budget": 8192,
+        "iqaeRelRmse": 0.4936445728253578,
+        "iqaeMeanQueries": 3040.0,
+        "iqaeRepeats": 20,
+        "monteCarloRelRmseMeasured": 1.8904601733081063,
+        "monteCarloZeroFractionMeasured": 0.765,
+        "monteCarloRepeats": 200,
+        "monteCarloRelRmseFormula": 1.9643897098490974,
+        "monteCarloZeroProbabilityFormula": 0.771713421065266
+      },
+      {
+        "budget": 65536,
+        "iqaeRelRmse": 0.06952499303990581,
+        "iqaeMeanQueries": 32827.5,
+        "iqaeRepeats": 20,
+        "monteCarloRelRmseMeasured": 0.6685970836111562,
+        "monteCarloZeroFractionMeasured": 0.15,
+        "monteCarloRepeats": 200,
+        "monteCarloRelRmseFormula": 0.6945166423636856,
+        "monteCarloZeroProbabilityFormula": 0.1257906687311575
+      }
+    ],
+    "protocol": "Each budget N caps the queries: IQAE stops before exceeding N state preparations (its precision target is set far below reach, \u03b5 = p/200, so the cap is what stops it); Monte Carlo draws exactly N simulated terms. Relative RMSE against the exact value over independent seeds. The Monte Carlo formula values are \u221a(p(1\u2212p)/N)/p and (1\u2212p)^N.",
+    "note": "IQAE uses up to N queries and typically fewer (mean shown); Monte Carlo always uses N.",
+    "runtimeMs": 13748.6
+  },
+  "software": {
+    "python": "3.12.3",
+    "packages": {
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "fastapi": "0.142.2",
+      "pydantic": "2.13.5",
+      "uvicorn": "0.54.0"
+    }
+  },
+  "runtimeSeconds": 64.5,
+  "scope": "Ideal state-vector simulation (Qiskit Aer). Model estimate for analysis; not a price, rating, forecast or investment advice. No quantum hardware was used and no wall-clock advantage is claimed."
+}

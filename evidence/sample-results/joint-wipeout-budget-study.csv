@@ -1,0 +1,3 @@
+budget_queries,iqae_rel_rmse,iqae_mean_queries_used,iqae_repeats,mc_rel_rmse_measured,mc_rel_rmse_formula,mc_zero_fraction_measured,mc_zero_probability_formula,mc_repeats
+8192,0.4936445728253578,3040.0,20,1.8904601733081063,1.9643897098490974,0.765,0.771713421065266,200
+65536,0.06952499303990581,32827.5,20,0.6685970836111562,0.6945166423636856,0.15,0.1257906687311575,200

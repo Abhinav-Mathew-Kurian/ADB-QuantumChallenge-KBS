@@ -1,0 +1,9 @@
+# Python runtime the published results were produced with (Python 3.12.3).
+# Listed for transparency: the source code itself is not part of this public repository.
+qiskit==2.5.2
+qiskit-aer==0.17.2
+numpy==2.5.3
+scipy==1.18.1
+fastapi==0.142.2
+pydantic==2.13.5
+uvicorn[standard]==0.54.0

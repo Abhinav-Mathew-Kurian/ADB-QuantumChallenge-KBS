@@ -1,0 +1,10 @@
+figure,stated,frozen_run,note
+Joint wipe-out probability 3.16e-5 (0.00316%),3.16×10⁻⁵,3.163×10⁻⁵,"IQAE run A estimate 3.159e-05, 95% interval 2.95e-05–3.34e-05"
+"About one in 32,000 three-year terms","1 in 32,000","1 in 31,613","1/exact = 31,613; from the IQAE estimate: 1 in 31,660"
+"~31,613 rejection-sampling tries vs 279 quantum queries (≈113× fewer)","31,613 vs 279 (113×)","31,613 vs 279 (113×)","PER WORST-CASE SCENARIO DRAWN (tail sampling), not per probability estimate; the one-off IQAE estimate that chooses the Grover power is extra (already paid in the run)"
+"Equal budget 8,192: Monte Carlo error 196.4%",196.4%,196.4% formula · 189.0% measured,196.4% is the binomial FORMULA √(p(1−p)/N)/p; measured over 200 Monte Carlo runs: 189.0%
+"Equal budget 8,192: quantum error 49.36%",49.36%,49.36% measured,"measured over 20 IQAE seeds; IQAE used on average 3,040 of the 8,192 allowed queries"
+Monte Carlo observed no wipe-out in 77% of runs,77%,77.2% formula · 76.5% measured,77% is the probability (1−p)^N; measured: 76% of 200 runs saw none
+Shared rainfall in 89% of sampled worst cases,89%,89.9% sampled · 88.5% exact,"denominator 1,000 sampled worst cases (seed 21); exact conditional fraction 88.5%"
+Single earthquake hitting both in 48% of sampled worst cases,48%,50.0% sampled · 48.4% exact,"denominator 1,000; exact conditional fraction 48.4%"
+"DCE: 1,584 held-out estimates, ECE 0.017, 98.8% ready-to-use","1,584 · 0.017 · 98.8%","1,584 · 0.0167 · 98.8% (1,190 of 1,205)","98.8% is the share of the 1,205 ACCEPT ('ready to use') results that were within tolerance, not the share of results marked ready; base rate 88.7% (test set may be too easy). Source bp27_evidence.json"
